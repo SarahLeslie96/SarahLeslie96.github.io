@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #1E90FF;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: white;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+.show-description p {
+  height: 150px;
+  color: rgba(255,255,255,1);
+  background: white;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  transition:height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+.show-description small {
+  opacity: 0;}
+
+.first{
+  background-image: url("http://i.ndtvimg.com/i/2015-04/green-tea_650x379_51430317406.jpg");
+}
+.second{
+  background-image: url("http://www.herbalteasonline.com/wp-content/uploads/2015/10/Chamomile-Tea.jpg");
+}
+.third{
+  background-image: url("http://fromdoctor.com/wp-content/uploads/2014/06/red-tea-benefits.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {font-size: 50px;
+  margin-top:20px;
+  line-height:40px;
+  }
+  h2 { 
+    font-size:20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px; 
+  input { border: 0;
+      padding: 10px;
+      font-size:18px;}
+      input[type="submit"] {
+        background:red;
+        color: white; }}
+small {
+  font-size:16px;   
+}
+
+  </style>
+
+</head>
+
+<body>
+<h1>Time for Tea</h1>
+<h2>A website dedicated to various teas and hot drinks</h2>
+
+<div class="first show-description">
+  <p>Green Tea 
+  <small> 
+  It's made from Camellia sinensis leaves that have not undergone the same withering and oxidation applied when processing Camellia sinensis into oolong tea and black tea. Green tea originated in China, but its production has spread to many countries in Asia.
+  <A HREF="http://www.teatulia.com/tea-101/what-is-green-tea.htm">Click here for more information on green tea!</A>
+ </small></p>
+</div>
+
+<div class="second show-description">
+  <p>Chamomile 
+  <small> Chamomile - Can also be spelled 'camomile' - is a daisy-like herb renowned in folk and traditional medicine for its health, cosmetic, and nutritional benefits. 
+For centuries, people around the world have turned to chamomile herbal tea as a cure-all for a multitude of physical and emotional health concerns. </small></p>
+</div>
+  
+<div class="third show-description">
+  <p>Red Tea 
+  <small> Health benefits of red rooibos tea include its use as a cure for nagging headaches, insomnia, asthma, eczema, bone weakness, hypertension, allergies, and premature aging. The tea is absolutely free from caffeine content and is also low in tannins. You can enjoy the refreshing beverage all day long with no possible side effects. Drinking rooibos tea can further ease severe stomach cramps, as well as bring relief to asthma and other related conditions. It also boosts the immune system of the human body. </small></p>
+</div>
+<script>
+
+$('div').on('click',function() {
+  $(this).toggleClass('show-description');
+});
+</script>
+
+<p>
+Sign up for our weekly tea newsletter
+<input type="email" placeholder="Your email">
+<input type="submit">
+</p>
+
+</body>
+
