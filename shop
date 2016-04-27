@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<title>Time For Tea</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 1050px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/d/dc/Tea_fields_(Will_Ellis)-2008-07-06.jpg");
+}
+div {
+  height: 240px;
+  width: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 20px 0px 20px;
+  border-radius: 12px;
+  border: black solid 5px;
+  border-bottom: 60px solid black;
+  float: left;
+}
+h1 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 150px;
+  color: rgba(0 0 0 1);
+  margin: 0;
+}
+h2 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: rgba(0 0 0 1);
+  margin: -20px 0 30px 0;
+}
+h3 {
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  text-align: center;
+  margin: 220px 0 0 0;
+}
+input {
+  border: black solid 3px;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+}
+input[type="submit"] {
+  background: black;
+  color: white;
+}
+header {
+  position: relative;
+  text-align: right;
+}
+.first{
+  background-image: url("http://a3145z1.americdn.com/wp-content/uploads/2013/10/anticancer-potential-of-green-tea-extract.jpg");
+}
+.second{
+  background-image: url("http://www.herbalteasonline.com/wp-content/uploads/2015/10/Chamomile-Tea.jpg");
+}
+.third{
+  background-image: url("http://fromdoctor.com/wp-content/uploads/2014/06/red-tea-benefits.jpg");
+}
+.fourth {
+  background-image: url("https://funflowerfacts.files.wordpress.com/2012/10/tea.jpg");
+}
+.fifth {
+  background-image: url("http://amorettiblog.com/wp-content/uploads/2012/12/dirty-chai-550px.jpg");
+}
+.sixth {
+  background-image: url("http://www.teamajesty.com/wp-content/uploads/2014/03/Spearmint-Tea-Benefits.jpg");
+}
+.seventh {
+  background-image: url("http://www.naturallivingideas.com/wp-content/uploads/2015/10/echninacea-tea.jpg");
+}
+.eighth {
+  background-image: url("http://kaleidoscope.cultural-china.com/chinaWH/upload/upfiles/2009-10/27/puer_tea__a_wonder_cure_for_diabeticsa34f533518dd7558908e.jpg");
+}
+.ninth {
+  background-image: url("https://niceeynice.files.wordpress.com/2010/11/ceai-negru.jpg");
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  <header>
+    <input type="search" placeholder="Search">
+    <input type="submit">
+  </header>
+  <h1>Time for Tea</h1>
+  <h2>Welcome to our shop. Click on an image for more information on the tea. The price displayed is the cost for 1 box of 100</h2>
+
+  <div class="first"><span class="price">£5.00</span><br />
+    <h3>Green Tea</h3>
+  </div>
+
+  <div class="second"><span class="price">£3.00</span><br />
+    <h3>Chamomile Tea</h3>
+  </div>
+    
+  <div class="third">
+    <h3>Rooibos Tea</h3><span class="price">£3.50</span><br />
+  </div>
+
+  <div class="fourth"><span class="price">£4.00</span><br />
+    <h3>Oolong Tea</h3>
+  </div>
+
+  <div class="fifth"><span class="price">£4.50</span><br />
+    <h3>Chai Tea</h3>
+  </div>
+
+  <div class="sixth"><span class="price">£2.50</span><br />
+    <h3>Mint Tea</h3>
+  </div>
+
+  <div class="seventh"><span class="price">£4.75</span><br />
+    <h3>Echinacea Tea</h3>
+  </div>
+
+  <div class="eighth"><span class="price">£3.75</span><br />
+    <h3>Pu-Erh Tea</h3>
+  </div>
+
+  <div class="ninth"><span class="price">£2.00</span><br />
+    <h3>Fermented Tea</h3>
+  </div>
+
+  <script>
+    $('.first').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Green_tea';
+    });
+    $('.second').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Chamomile';
+    });
+    $('.third').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Rooibos';
+    });
+    $('.fourth').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Oolong';
+    });
+    $('.fifth').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Masala_chai';
+    });
+    $('.sixth').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Maghrebi_mint_tea';
+    });
+    $('.seventh').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Echinacea';
+    });
+    $('.eighth').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Pu-erh_tea';
+    });
+    $('.ninth').click(function() {
+      window.location.href='https://en.wikipedia.org/wiki/Fermented_tea';
+    });
+  </script>
+
+</body>
+
